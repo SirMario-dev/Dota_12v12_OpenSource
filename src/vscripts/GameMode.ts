@@ -60,8 +60,8 @@ export class GameMode {
 
         // Add 4 bots to lobby in tools
         if (IsInToolsMode() && state == GameState.CUSTOM_GAME_SETUP) {
-            for (let i = 0; i < 4; i++) {
-                Tutorial.AddBot("npc_dota_hero_lina", "", "", false);
+            for (let i = 0; i < 23; i++) {
+                Tutorial.AddBot("npc_dota_hero_lina", "", "", i < 12);
             }
         }
 
