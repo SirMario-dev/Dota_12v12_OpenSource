@@ -48,10 +48,10 @@ export class GameMode {
     }
 
     private configure(): void {
-        GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.GOODGUYS, 3);
-        GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.BADGUYS, 3);
+        GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.GOODGUYS, 12);
+        GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.BADGUYS, 12);
 
-        GameRules.SetShowcaseTime(0);
+        GameRules.SetShowcaseTime(8);
         GameRules.SetHeroSelectionTime(heroSelectionTime);
     }
 
